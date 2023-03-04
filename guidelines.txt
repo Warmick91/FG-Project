@@ -1,0 +1,12 @@
+create a Unity project (at least version 2019).
+create a repository
+create a scene in which a ball rotates around a cube.
+when you click on the cube, the colour of the cube and the ball should change.
+think of a small additional function.
+send me the repository.
+ 
+
+Pay attention to the guidelines for clean code.
+
+For the commits, imagine that you are working in a team 
+where points 3, 4 and 5 are features.
