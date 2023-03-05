@@ -5,8 +5,8 @@ using UnityEngine;
 public class SpawnBall : MonoBehaviour
 {
     public GameObject ballPrefab;
-    public SphereCollider spawnArea;
-    public SphereCollider excludedArea;
+    public BoxCollider spawnArea;
+    public BoxCollider excludedArea;
     const float positionY = 0.5f;
 
     ColorSwitcher colorSwitcher;
@@ -41,6 +41,7 @@ public class SpawnBall : MonoBehaviour
 
             // Instantiate a new ball at the random position
             GameObject newBall = Instantiate(ballPrefab, randomPosition, Quaternion.identity);
+            newBall.transform.Find("ColorChangeParticles").GetComponent<ParticleSystem>().Play();
             newBall.GetComponent<MeshRenderer>().material.color = colorSwitcher.CreateNewColor();
         }
     }
