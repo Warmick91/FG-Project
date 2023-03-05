@@ -51,7 +51,7 @@ public class ColorSwitcher : MonoBehaviour
         r.material.color = CreateNewColor();
     }
 
-    Color CreateNewColor()
+    public Color CreateNewColor()
     {
         float r = Random.Range(0f, 1.0f);
         float g = Random.Range(0f, 1.0f);
