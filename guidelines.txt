@@ -1,6 +1,5 @@
 create a Unity project (at least version 2019).
-create a repository
-create a scene in which a ball rotates around a cube.
+create a repositor scene in which a ball rotates around a cube.
 when you click on the cube, the colour of the cube and the ball should change.
 think of a small additional function.
 send me the repository.
