@@ -16,7 +16,7 @@ public class BallRotateAround : MonoBehaviour
 
     void Update()
     {   
-        // Rotate around the cube
+        // Rotate around the cube object
         transform.RotateAround(cube.position, Vector3.up, rotationSpeed * Time.deltaTime);
     }
 }

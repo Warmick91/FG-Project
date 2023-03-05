@@ -21,6 +21,7 @@ public class BallAddForce : MonoBehaviour
     {
         // Calculate a vector towards the cube
         directionBallToCube = (cube.transform.position - this.transform.position).normalized;
+    
         // Calculate a perpendicular vector
         directionRound = Vector3.Cross(directionBallToCube, Vector3.up);
         ballRb.AddForce(directionRound * rollSpeed * Time.deltaTime);
