@@ -20,6 +20,7 @@ public class ColorSwitcher : MonoBehaviour
         }
         else
         {
+
             Debug.LogError("The ball not found in the present scene");
         }
 
@@ -31,6 +32,7 @@ public class ColorSwitcher : MonoBehaviour
 
     void OnMouseDown()
     {
+
         // Change the color only after half of the effect has been played
         StartCoroutine(DelayedColorChange(ballParticles, ballRenderer));
         StartCoroutine(DelayedColorChange(cubeParticles, cubeRenderer));
