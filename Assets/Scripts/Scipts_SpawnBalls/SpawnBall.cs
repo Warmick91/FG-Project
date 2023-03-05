@@ -40,9 +40,15 @@ public class SpawnBall : MonoBehaviour
             while (insideExcludeArea);
 
             // Instantiate a new ball at the random position
-            GameObject newBall = Instantiate(ballPrefab, randomPosition, Quaternion.identity);
-            newBall.transform.Find("ColorChangeParticles").GetComponent<ParticleSystem>().Play();
-            newBall.GetComponent<MeshRenderer>().material.color = colorSwitcher.CreateNewColor();
+            InstantiateBall(randomPosition);
         }
     }
+
+    void InstantiateBall(Vector3 randomPosition)
+    {
+        GameObject newBall = Instantiate(ballPrefab, randomPosition, Quaternion.identity);
+        newBall.transform.Find("ColorChangeParticles").GetComponent<ParticleSystem>().Play();
+        newBall.GetComponent<MeshRenderer>().material.color = colorSwitcher.CreateNewColor();
+    }
+
 }

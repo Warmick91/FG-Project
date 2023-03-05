@@ -16,13 +16,12 @@ public class BallAddForce : MonoBehaviour
         cube = GameObject.Find("Cube");
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
         // Calculate a vector towards the cube
         directionBallToCube = (cube.transform.position - this.transform.position).normalized;
     
-        // Calculate a perpendicular vector
+        // Calculate the perpendicular vector
         directionRound = Vector3.Cross(directionBallToCube, Vector3.up);
         ballRb.AddForce(directionRound * rollSpeed * Time.deltaTime);
         ballRb.AddForce(directionBallToCube * rollSpeed * Time.deltaTime);
