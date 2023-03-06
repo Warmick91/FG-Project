@@ -27,7 +27,6 @@ public class ColorSwitcher : MonoBehaviour
         // Add the cube's required elements to variables
         cubeRenderer = GetComponent<MeshRenderer>();
         cubeParticles = transform.Find("ColorChangeParticles").GetComponent<ParticleSystem>();
-
     }
 
     void OnMouseDown()
