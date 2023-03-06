@@ -709,20 +709,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1864292218}
   m_CullTransparentMesh: 1
---- !u!114 &263789429425777763
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9151852033483266513}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: faeb4b0d303de5040a41ccac651895c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cube: {fileID: 8953963846681308150, guid: b4b3365632f3906478b62b47dd12ddda, type: 3}
-  rotationSpeed: 50
 --- !u!198 &2947332674465621461
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -20327,7 +20313,7 @@ GameObject:
   - component: {fileID: 9151852033483266511}
   - component: {fileID: 9151852033483266510}
   - component: {fileID: 9151852033483266506}
-  - component: {fileID: 263789429425777763}
+  - component: {fileID: 9151852033483266514}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -20335,3 +20321,15 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &9151852033483266514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9151852033483266513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6f6521fdc174af48b32e520e1e78e44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
